@@ -1,0 +1,9 @@
+language: python
+python:
+  - "3.6"
+install:
+  - pip install ansible==2.8.6 molecule[gce] apache-libcloud
+script:
+  - molecule test --scenario-name gce
+after_script:
+  - molecule destroy --scenario-name gce
