@@ -45,6 +45,19 @@ Example Playbook
     - { role: vscoder.test-ansible-role-db, mongo_bind_ip: 0.0.0.0 }
 ```
 
+Makefile targets
+----------------
+
+| Target                     | Description                                                                 |
+| -------------------------- | --------------------------------------------------------------------------- |
+| install_ansible_venv       | install ansible into local .venv using `python3 -m venv`                    |
+| install_ansible_virtualenv | install ansible into local .venv using `virtualenv`                         |
+| molecule_static_analyse    | execute `molecule lint` and `molecule syntax`                               |
+| molecule_create            | create molecule instances via `molecule create`                             |
+| molecule_verify            | apply playbook to existent instance and run tests (`converge` and `verify`) |
+| molecule_test              | run `molecule test` complex testing                                         |
+| molecule_destroy           | force destroy instances `molecule destroy -f`                               |
+
 License
 -------
 
