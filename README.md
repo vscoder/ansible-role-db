@@ -1,4 +1,4 @@
-test-ansible-role-db
+ansible-role-db
 ====================
 
 Install MongoDB 3.2
