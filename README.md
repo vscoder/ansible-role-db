@@ -14,7 +14,7 @@ Installation
 
 Add to `requirements.yml`
 ```yaml
-- name: db
+- name: vscoder.db
   src: https://github.com/vscoder/ansible-role-db
   version: v0.1
 ```
@@ -42,7 +42,7 @@ Example Playbook
 ```yaml
 - hosts: db
   roles:
-    - { role: vscoder.test-ansible-role-db, mongo_bind_ip: 0.0.0.0 }
+    - { role: vscoder.db, mongo_bind_ip: 0.0.0.0 }
 ```
 
 Makefile targets
