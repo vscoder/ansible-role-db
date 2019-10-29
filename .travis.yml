@@ -7,6 +7,8 @@ before_script:
   - tar xvf secrets.tar
 script:
   - ls -la
+  - echo ANSIBLE_PRIVATE_KEY_FILE="$ANSIBLE_PRIVATE_KEY_FILE"
+  - echo GCE_CREDENTIALS_FILE=="$GCE_CREDENTIALS_FILE="
   - molecule --debug test --scenario-name gce
 after_script:
   - molecule destroy --scenario-name gce
