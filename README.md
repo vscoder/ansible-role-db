@@ -15,7 +15,7 @@ Installation
 Add to `requirements.yml`
 ```yaml
 - name: db
-  src: https://github.com/vscoder/test-ansible-role-db
+  src: https://github.com/vscoder/ansible-role-db
   version: v0.1
 ```
 
