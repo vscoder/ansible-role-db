@@ -1,3 +1,8 @@
+# VARIABLES
+
+# molecule executable path
+MOLECULE?=./.venv/bin/molecule
+
 install_ansible_venv:
 	test -d ./.venv || python3 -m venv ./.venv
 	./.venv/bin/pip install -r requirements.txt
@@ -7,19 +12,19 @@ install_ansible_virtualenv:
 	./.venv/bin/pip install -r requirements.txt
 
 molecule_static_analyse:
-	./.venv/bin/molecule lint
-	./.venv/bin/molecule syntax
+	${MOLECULE} lint
+	${MOLECULE} syntax
 
 molecule_create:
-	./.venv/bin/molecule create
-	./.venv/bin/molecule list
+	${MOLECULE} create
+	${MOLECULE} list
 
 molecule_verify:
-	./.venv/bin/molecule converge
-	./.venv/bin/molecule verify
+	${MOLECULE} converge
+	${MOLECULE} verify
 
 molecule_test:
-	./.venv/bin/molecule test
+	${MOLECULE} test
 
 molecule_destroy:
-	./.venv/bin/molecule destroy -f
+	${MOLECULE} destroy -f
