@@ -1,3 +1,5 @@
+[![Build Status](https://travis-ci.org/vscoder/ansible-role-db.svg?branch=master)](https://travis-ci.org/vscoder/ansible-role-db)
+
 ansible-role-db
 ====================
 
