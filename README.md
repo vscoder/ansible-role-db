@@ -18,7 +18,7 @@ Add to `requirements.yml`
 ```yaml
 - name: vscoder.db
   src: https://github.com/vscoder/ansible-role-db
-  version: v0.1
+  version: v0.2
 ```
 
 Role Variables
