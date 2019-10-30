@@ -9,7 +9,7 @@ platforms:
   - name: instance-travis
     zone: us-west1-a
     machine_type: f1-micro
-    image: ubuntu-1604-lts
+    image: ubuntu-1604-xenial-v20191024
 provisioner:
   name: ansible
   lint:
